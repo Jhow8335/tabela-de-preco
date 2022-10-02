@@ -1,0 +1,158 @@
+:root {
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+  --red: #cb0404;
+  --yellow: #ffcc29;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 710px;
+  width: 1517px;
+}
+
+main {
+  height: 710px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.background__sup {
+  background-color: var(--blue);
+  box-sizing: border-box;
+  height: 50%;
+  padding: 60px;
+  text-align: center;
+}
+
+.background__sup h1 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+.background__sup p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 490px;
+}
+
+.background__inf {
+  background-color: var(--page-background);
+  height: 50%;
+}
+
+.sectionBox {
+  display: flex;
+  left: 17%;
+  position: absolute;
+  top: 33%;
+  
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 440px;
+  margin: 0 20px;
+  padding: 30px ;
+  width: 306px;
+}
+
+.box__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.box__price {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.box__text {
+  color: var(--gray);
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.box__btn-1 {
+  background-color: #ffffff;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  height: 51px;
+  margin-top: 104px;
+  width: 245px;
+}
+
+.box__btn-2 {
+  background-color: #ffffff;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  height: 51px;
+  margin-top: 69px;
+  width: 245px;
+}
+
+.box__btn-3 {
+  background-color: #ffffff;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  height: 51px;
+  margin-top: 34px;
+  width: 245px;
+}
+
+.box__btn-1:hover, .box__btn-2:hover, .box__btn-3:hover  { 
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+.btn__text  {
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn__text:hover {
+  color: #ffffff;
+}
+
+.check__top {
+  border-top: 1px solid rgba(0, 0, 0, 0.200);
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+} 
+
+.check__random {
+  display: flex;
+  gap: 10px;
+}
+
+.check__text {
+ color: var(--gray);
+ font-size: 14px;
+ font-weight: 600;
+ padding: 10px 0;
+}
