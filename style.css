@@ -5,117 +5,87 @@
   --red: #cb0404;
   --yellow: #ffcc29;
   font-family: 'Open Sans', sans-serif;
-  
 }
 
 * {
   border: 0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 710px;
-  width: 1517px;
-}
-
-main {
-  height: 710px;
-  margin: 0 auto;
-  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 .background__sup {
   background-color: var(--blue);
-  box-sizing: border-box;
   height: 50%;
-  padding: 60px;
+  padding: 3.75rem;
   text-align: center;
 }
 
 .background__sup h1 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3rem;
   margin: 0 auto;
-  margin-bottom: 20px;
-  width: 600px;
+  margin-bottom: 1.25rem;
+  width: 37.5rem;
 }
 
 .background__sup p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.13rem;
   line-height: 1.5;
   margin: 0 auto;
-  width: 490px;
-}
-
-.background__inf {
-  background-color: var(--page-background);
-  height: 50%;
+  width: 30.63rem;
 }
 
 .sectionBox {
   display: flex;
   left: 15%;
   position: absolute;
-  top: 33%;
-  
+  top: 33%; 
 }
 
 .box {
   background-color: #ffffff;
-  border-radius: 10px;
-  box-sizing: border-box;
-  height: 440px;
-  margin: 0 20px;
-  padding: 30px ;
-  width: 306px;
+  border-radius: 0.63rem;
+  height: 27.5rem;
+  margin: 0 1.25rem;
+  padding: 1.88rem;
+  width: 19.13rem;
+  position: relative;
 }
 
 .box__title {
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 600;
-  margin: 0 0 30px 0;
+  margin: 0 0 1.88rem 0;
 }
 
 .box__price {
-  font-size: 30px;
+  font-size: 1.88rem;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 0.63rem;
 }
 
 .box__text {
   color: var(--gray);
-  font-size: 14px;
-  padding-bottom: 20px;
+  font-size: 0.88rem;
+  padding-bottom: 1.25rem;   
 }
 
-.box__btn-1 {
+.box__btn {
   background-color: #ffffff;
   border: 1px solid var(--blue);
-  border-radius: 10px;
-  height: 51px;
-  margin-top: 104px;
-  width: 245px;
-}
-
-.box__btn-2 {
-  background-color: #ffffff;
-  border: 1px solid var(--blue);
-  border-radius: 10px;
-  height: 51px;
-  margin-top: 69px;
-  width: 245px;
-}
-
-.box__btn-3 {
-  background-color: #ffffff;
-  border: 1px solid var(--blue);
-  border-radius: 10px;
-  height: 51px;
-  margin-top: 34px;
-  width: 245px;
+  border-radius: 0.63rem;
+  width: 15.31rem;
+  height: 3.19rem;
+  position: absolute;
+  bottom: 1rem;
 }
 
 .box__btn-1:hover, .box__btn-2:hover, .box__btn-3:hover  { 
@@ -125,9 +95,9 @@ main {
 
 .btn__text  {
   color: var(--blue);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -139,25 +109,30 @@ main {
 .check__top {
   border-top: 1px solid rgba(0, 0, 0, 0.200);
   display: flex;
-  gap: 10px;
-  padding-top: 15px;
+  gap: 0.63rem;
+  padding-top: 0.94rem;
 } 
 
 .check__random {
   display: flex;
-  gap: 10px;
+  gap: 0.63rem;
 }
 
 .check__text {
  color: var(--gray);
- font-size: 14px;
+ font-size: 0.88rem;
  font-weight: 600;
- padding: 10px 0;
+ padding: 0.63 0;
+}
+
+.background__inf {
+  background-color: var(--page-background);
+  height: 50%;
 }
 
 @media (max-width: 1280px) {
   body {
-    width: 99vw;
+    width: 100vw;
   }
 
   .background__sup h1 {
@@ -175,44 +150,34 @@ main {
   }
 
   .box {
-    padding: 19px; 
-    width: 250px;
+    padding: 1.19rem; 
+    width: 15.62rem;
   }
 
-  .box__btn-1{
-    margin-top: 125px;
-    width: 211px;
-  }
-
-  .box__btn-2 {
-    margin-top: 90px;
-    width: 211px;
-  } 
-  
-  .box__btn-3 {
-    margin-top: 54px;
-    width: 211px;
+  .box__btn {
+    width: 13.19rem;
   }
 } 
 
 @media (max-width: 1030px) {
-  .background__inf {
-    height: 113%;
-  }
-
+  
   .sectionBox {
     left: 2%;
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  
   .box {
-    width: 300px;
-    margin-bottom: 20px;
+    width: 18.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .box__btn {
+    width: 16.4rem;
   }
 
-  .box__btn-1, .box__btn-2, .box__btn-3 {
-    width: 262px;
+  .background__inf {
+    height: 150vh;
   }
 }
 
@@ -222,17 +187,16 @@ main {
   }
 
   .background__sup h1 {
-    font-size: 41px;
-    padding: 0px;
-    width: 475px;
+    font-size: 2.57rem;
+    padding: 0;
+    width: 29.69rem;
   }
 
   .background__sup p {
-    width: 470px;
-
+    width: 29.38rem;
   }
 
   .background__inf {
-    height: 198%;
+    height: 200%;
   }
 }
